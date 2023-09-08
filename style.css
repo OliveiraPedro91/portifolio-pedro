@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+}
+html{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    background-color: #eee;
+    scroll-behavior: smooth;
+}
+#logo{
+    padding: 3px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a.menu{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+a.menu:hover{
+    background-color: rgba(13, 29, 44, 0.89);
+    color: white;
+    font-weight: bolder;
+}
+div#espaco-mobile{
+    display: none;
+}
+section.apresentacao{
+    /* tamanho da apresentação */
+    width: 100%;
+    height: 100vh;
+    /* Parametros da foto de fundo */
+    background-blend-mode: color;
+    background-attachment: fixed;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+    /* Textos */
+div.conteudo-apresentacao{
+    max-width: 720px;
+    margin: auto;
+    padding-top: 150px;
+    height: 50vh;
+    color: white;
+}
+div.conteudo-apresentacao h1 {
+    font-size: 3rem;
+    padding: 10px;
+}
+div.conteudo-apresentacao p{
+    font-size: 1.1rem;
+    padding: 10px;
+}
+/* inicio da section conteúdo */
+/* Toda section conteúdo */
+div#espaco-conteudo{
+    height: 70px;
+}
+section.conteudo{
+    color: rgba(13, 29, 44, 0.89);
+    max-width: 720px;
+    margin: auto;
+    text-align: center;
+}
+/* Instrução para o H1 do conteúdo */
+section.conteudo h1{
+    padding: 25px;
+}
+/* Instrução para o P do conteúdo */
+section.conteudo p{
+    padding: 25px;
+}
+/* Divs onde ficam os cards com os Cards com os sites */
+div.meus-projetos{
+    max-width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+/* Cards de conteúdos com os sites */
+div#projeto{
+    width: 238px;
+    height: 450px;
+    border: solid 2px rgba(13, 29, 44, 0.89);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+div#projeto:hover{
+    text-decoration: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+div.vazia{
+    margin: auto;
+    max-width: 600px;
+    border-top: 1px solid black;
+}
+div#espaco-contato{
+    height: 70px;
+}
+.contato{
+    margin: auto;
+    width: 720px;
+    border-top: 1px solid black;
+}
+section.js-contato h1{
+    text-align: center;
+    padding: 30px;
+}
+.redes-sociais{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.redes-sociais a{
+    padding: 10px;
+}
+/* formulário */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h2{
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-container button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.button-container button[type="reset"] {
+    background-color: #ccc;
+    color: #000;
+}
+footer{
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+footer img{
+    padding-left: 10px;
+}
